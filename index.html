@@ -1,54 +1,83 @@
-<!html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Austin Node Usergroup Home Page</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-responsive.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container-fluid">
-		<div class="navbar">
-    	<div class="navbar-inner">
-	    	<div class="container">
-	    		<a class="brand" href="#">Austin Node Usergroup</a>
-		    	<ul class="nav">
-		    		<li class="active"><a href="#">Home</a></li>
-<!-- 		    		<li><a class="disabled" href="#about">About</a></li> -->
-						
-		    		<li><a href="http://www.meetup.com/Austin-Node-Usergroup/">Meetup Page</a>
-		    	</ul>
-    		</div>
-    	</div>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container"><a href="http://austinnode.com" class="brand">Austin Node Usergroup</a>
+            <ul class="nav">
+              <li><a id="homeLink" href="#" class="active">Home</a></li>
+              <li><a id="aboutLink" href="#about">About</a></li>
+              <li><a id="sponsorsLink" href="#sponsors">Sponsors</a></li>
+              <li><a id="contactLink" href="#contact">Contact Us</a></li>
+              <li class="divider">|</li>
+              <li> <a href="http://www.meetup.com/Austin-Node-Usergroup/">Meetup Page</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="container-fluid" id="mainPage">
-    	<div class="hero-unit">
-	    	<h1>Hello, World!</h1>
-	    	<p>This is the home page for the new Austin Node Usergroup. We will be having our first meetup on July 12th, 2012. We need:
-	    		<ul>
-	    		
-	    			<li><span class="bold">Sponsors:</span> we need some great sponsors! We will put their logos up on this site, and they will have a few minutes at the beginning of the meetup to announce that they're hiring, talk about what they do, anything really. Also, undying gratitude from this new meetup organizer.</li>
-	    			<li><span class="bold">A Venue:</span> we would like the meetup to be downtown, so if you know anyone, let us know!</li>
-	    			<li><span class="bold">A Speaker:</span> we do in fact need a speaker for July. Special interest in a speaker who is running node in production, but we're open to all proposals.</li>
-	    		</ul>
-	    	<p>If you have or are any of these things, please contact me at admin@austinnode.com or ping @atxnode</p>
-	    	<p>If you are interested in joining up, there is a meetup link in the header. The more, the merrier!</p>
-	    </div>
-	    <div class="hero-unit">
-	    	<h1>Coming soon to this site:</h1>
-	    	<ul>
-	    		<li>First meetup details</li>
-	    		<li>Sponsors page</li>
-	    		<li>About this group</li>
-	    		<li>Speakers page</li>
-	    	</ul>
-	    </div>
+    <!--Home-->
+    <div id="home" class="container-fluid page">
+      <h1>Home </h1>
+      <div class="hero-unit">
+        <h2>Our First Meetup</h2>
+        <h3>July 12, 2012</h3>
+        <p>We need a venue, a speaker, and sponsor! If you sponsor, you get:</p>
+        <ul>
+          <li>Your logo and info on our sponsors page</li>
+          <li>A few minutes at the beginning of the meetup to talk about your company
+            <ul>
+              <li>This includes any open positions you may have to fill!</li>
+            </ul>
+          </li>
+          <li>The undying gratitude of a new meetup organizer</li>
+        </ul>
+        <p>Please contact me at admin@austinnode.com or on twitter at @atxnode with questions/interest</p>
+      </div>
     </div>
-	</div>
-	<script src="js/jquery.js"></script>
-	<script src="js/underscore.min.js"></script>
-	<script src="js/backbone.min.js"></script>
-	<script src="js/application.js"></script>
-</body>
+    <!--About-->
+    <div id="about" class="container-fluid page">
+      <h1>About Us</h1>
+      <div class="hero-unit">
+        <p>
+          We are a usergroup dedicated to spreading knowledge and interest of Node.JS to developers in the Austin 
+          area. We strive to both help the new and intellectually stimulate those with experience with Node.JS, 
+          and of course to have fun and make new friends in the process.
+        </p>
+      </div>
+    </div>
+    <!--Sponsors-->
+    <div id="sponsors" class="container-fluid page">
+      <h1>Sponsors</h1>
+      <div class="hero-unit">
+        <p>
+          These are the companies and organization that make our meetups possible! Please be sure to check our their 
+          websites. Who knows, you might find a job working with Node.JS here!
+        </p>
+      </div>
+      <h1>July 2012</h1>
+      <p class="bold">Your company's name, logo, and description here!</p>
+    </div>
+    <!--Contact-->
+    <div id="contact" class="container-fluid page">
+      <h1>Contact Us</h1>
+      <div class="hero-unit">
+        <ul>
+          <li>Email : <a href="mailto:admin@nodeaustin.com">admin@austinnode.com</a></li>
+          <li>Twitter : <a href="http://twitter.com/atxnode">@atxnode</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--scripts-->
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.min.js"></script>
+    <script src="js/backbone.min.js"></script>
+    <script src="js/application.js"></script>
+  </body>
 </html>
-
