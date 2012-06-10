@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <div class="container-fluid">
       <div class="navbar">
         <div class="navbar-inner">
-          <div class="container"><a href="http://austinnode.com" class="brand">Austin Node Usergroup</a>
+          <div class="container">
             <ul class="nav">
               <li><a id="homeLink" href="#" class="active">Home</a></li>
               <li><a id="aboutLink" href="#about">About</a></li>
@@ -22,9 +21,13 @@
         </div>
       </div>
     </div>
+    <div class="nodeLogo"> 
+      <h2>Austin</h2><img src="img/logo.png"/>
+      <h2>Usergroup</h2>
+    </div>
     <!--Home-->
     <div id="home" class="container-fluid page">
-      <h1>Home </h1>
+      <h1 class="title">Home </h1>
       <div class="hero-unit">
         <h2>Our First Meetup</h2>
         <h3>July 12, 2012</h3>
@@ -43,8 +46,9 @@
     </div>
     <!--About-->
     <div id="about" class="container-fluid page">
-      <h1>About Us</h1>
+      <h1 class="title">About Us</h1>
       <div class="hero-unit">
+        <h2>Our Mission</h2>
         <p>
           We are a usergroup dedicated to spreading knowledge and interest of Node.JS to developers in the Austin 
           area. We strive to both help the new and intellectually stimulate those with experience with Node.JS, 
@@ -54,20 +58,22 @@
     </div>
     <!--Sponsors-->
     <div id="sponsors" class="container-fluid page">
-      <h1>Sponsors</h1>
+      <h1 class="title">Sponsors</h1>
       <div class="hero-unit">
+        <h2>Our Support</h2>
         <p>
           These are the companies and organization that make our meetups possible! Please be sure to check our their 
           websites. Who knows, you might find a job working with Node.JS here!
         </p>
       </div>
-      <h1>July 2012</h1>
+      <h2>July 2012</h2>
       <p class="bold">Your company's name, logo, and description here!</p>
     </div>
     <!--Contact-->
     <div id="contact" class="container-fluid page">
-      <h1>Contact Us</h1>
+      <h1 class="title">Contact Us</h1>
       <div class="hero-unit">
+        <h2>Feel Free to Contact Us!</h2>
         <ul>
           <li>Email : <a href="mailto:admin@nodeaustin.com">admin@austinnode.com</a></li>
           <li>Twitter : <a href="http://twitter.com/atxnode">@atxnode</a></li>
@@ -75,7 +81,7 @@
       </div>
     </div>
     <!--scripts-->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/underscore.min.js"></script>
     <script src="js/backbone.min.js"></script>
     <script src="js/application.js"></script>
